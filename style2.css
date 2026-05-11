@@ -1,5 +1,6 @@
 body {
     background-color: black;
+          scrollbar-color: rgb(255, 0, 0) rgb(0, 0, 0);
    }
 body {
     color: rgb(255, 0, 0);
@@ -37,7 +38,9 @@ body {
    .IMAGE2 {
     width: 330px;
   }
-
+ .MINIIMAGE {
+width: 30px;
+ }
 
   .NAV3 {
     background-image: url(IMG/REDBACKGROUND.jpg);
@@ -52,6 +55,41 @@ body {
     text-align: center;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 
+  }
+
+
+.NAVINFO {
+    background-image: url(IMG/STARTS2BACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 200px;
+    height: 100px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    overflow: scroll;
+     transform: translateY(-220px);
+     scrollbar-color: black blue;
+  }
+
+  .NAVINFO2 {
+    background-image: url(IMG/STARTS2BACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 200px;
+    height: 100px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    overflow: scroll;
+     transform: translateY(-170px);
+     scrollbar-color: black rgb(255, 0, 0);
   }
 
 
