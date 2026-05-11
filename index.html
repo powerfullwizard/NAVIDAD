@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
      <link rel="stylesheet" href="style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRUEBA</title>
+    <title>CACA</title>
+    <link rel="icon" type="image/x-icon" href="IMG/BLOODYBRAIN.gif">
 </head>
 <body>
 
 
+<script>
+let texto = "       EL  FANTASMA DE EL BAÑO MERODEA BUSCANDO SUS PASTILLAS PARA LA DIARREA...   ";
 
+setInterval(() => {
+  texto = texto.substring(1) + texto[0];
+  document.title = texto;
+}, 200);
+</script>
 
 
 <div class="contenedor">
@@ -35,7 +43,7 @@
     <center>
  <nav class="NAV1">
 <p>VACIO</p>
-<img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
+<img class="IMAGE" src="IMG/WELCOME1.gif">
  </nav>
  </center>
  
@@ -60,6 +68,22 @@
   <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
   <br>
    <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
+   <nav class="NAVINFO"><marquee behavior="" direction="right"><img class="MINIIMAGE" src="IMG/SPACESHIP.gif"> HOLA <img class="MINIIMAGE" src="IMG/SPACESHIP.gif"></marquee></nav>
+   <nav class="NAVINFO2"><marquee behavior="" direction="right"><img class="IMAGE" src="IMG/NEWBLOODSIGN.gif"></marquee>
+  <br>
+  <p>
+    NUEVO: BARRA DE NOVEDADES.
+    <BR>
+      <BR>
+      NUEVAS CANCIONES.
+      <BR>
+        <BR>
+        MI LIBERTAD DE EXPRESIÓN ARTISTICA SE A VUELTO LIMITADA DEBIDO A MULTIPLES CRITICAS POR PARTE DE MIS MALVADOS LOROS QUE SE CAGAN EN MI TECLADO POR MI NEGLIGENCIA.
+        <br>
+        <BR>
+          NUEVOS VIDEOS "LITTLE SHOP OF HORRORS - DENTIST" "JIM E BROWN - IM QUITTING PROZAC TO CONTINUE DRINKING"
+  </p>
+</nav>
  </nav>
 </center>
 
@@ -103,7 +127,8 @@
       "Faust from Phantom of the Paradise.mp4",
       "Paul Williams - Hell of It.mp4",
       "Phantom Of The Paradise - Life At Last (Ray Kennedy).mp4",
-      "video8.mp4"
+      "DENTIST.mp4",
+      "IM QUITTING PROZAC.mp4"
     ];
 
     let currentVideo = 0;
@@ -139,7 +164,7 @@
 <audio id="audio5" src="AUDIO/Quiet Riot - Come On Feel The Noise.mp3" loop></audio>
  <audio id="audio6" src="AUDIO/Rush - Tom Sawyer.mp3" loop></audio>
 <audio id="audio7" src="AUDIO/Queen-Bohemian Rhapsody (Only the hard rock part).mp3" loop></audio>
-<audio id="audio8" src="audio8.mp3" loop></audio>
+<audio id="audio8" src="AUDIO/We're Not Gonna Take It.mp3" loop></audio>
 <audio id="audio9" src="audio9.mp3" loop></audio>
 <audio id="audio10" src="audio10.mp3" loop></audio>
 
@@ -219,12 +244,13 @@ const escenas = {
     ]
   },
   4: {
-    titulo: "NO SÉ",
-    texto: "NO TERMINADO Y SOPORTA.",
-    media: "video.mp4",
+    titulo: "HERBERT",
+    texto: "ENCONTRASTE UN MISTERIOSO LABORATORIO Y VES A HERBERT.",
+    media: "IMG/REANIMATORBACKGROUND.jpg",
     tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
     opciones: [
-          { texto: "Continuar", siguiente: 1 }
+          { texto: "HABLAR CON EL", siguiente: 18 }, { texto: "SALIR", siguiente: 3 }
     ]
   },
    5: {
@@ -264,7 +290,127 @@ const escenas = {
     tipo: "imagen",
       audio: "AUDIO/Dramatic Organ Sound.mp3",
     opciones: [
-          { texto: "HABLAR CON DRACULA", siguiente: 4 }
+          { texto: "HABLAR CON DRACULA", siguiente: 10 }
+    ]
+         },
+   10: {
+    titulo: "DRACULA",
+    texto: "QUE TE TRAE POR ESTE PELIGROSO CASTILLO? COCHINO HUMANO APESTOSO...",
+    media: "IMG/DRACULA2.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "SOLO BUSCO LA SALIDA", siguiente: 11 }, { texto: "LOS VAMPIROS BEBEN TAMPONES?", siguiente: 12 }, { texto: "DONDE ESTÁ TU JUGO DE TOMATE NOSFERATU", siguiente: 13 }
+    ]
+    },
+    11: {
+    titulo: "DRACULA",
+    texto: "ESTA BIEN, TE DIRÉ COMO VOLVER A TU CIUDAD HUMANA DE CACA, PERO PRIMERO HAZME UN FAVOR.",
+    media: "IMG/DRACULA2.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "CUAL?", siguiente: 14 },  { texto: "JAMAS!", siguiente: 13 }
+    ]
+    },
+   12: {
+    titulo: "DRACULA",
+    texto: "BEBO ESO DESDE LA FUENTE, OSEA LA VAGINA DE TU MAMÁ.",
+    media: "IMG/DRACULAFLOW.jpg",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "PERDON DRACULA", siguiente: 16 }, { texto: "TE ODIO DRACULA!", siguiente: 13 }
+    ]
+     },
+   13: {
+    titulo: "DRACULA",
+    texto: "HUMANO INSOLENTE!! TE DRENARÉ LA SANGRE!.",
+    media: "IMG/DRACULA1.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "VOLVER A JUGAR", siguiente: 1 }
+    ]
+     },
+   14: {
+    titulo: "DRACULA",
+    texto: "TRAEME UN TAMPON USADO DE TU MAMÁ.",
+    media: "IMG/DRACULAFLOW.jpg",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "ESO ES GROSERO", siguiente: 15 }
+    ]
+     },
+   15: {
+    titulo: "DRACULA",
+    texto: "UHM... BUENO ES CIERTO, NO TE PREOCUPES NO HAGAS NADA... NUNCA FUI BUENO CON EL HUMOR.",
+    media: "IMG/DRACULA2.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "ME DIRAS COMO IRME?", siguiente: 16 }, { texto: "LAMENTO ESCUCHAR ESO, DRACULA", siguiente: 17 }
+    ]
+     },
+   16: {
+    titulo: "DRACULA",
+    texto: "SOLO VE CON HERBERT, VETE DE AQUI AHORA!!.",
+    media: "IMG/DRACULA1.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "BUSCAR A HERBERT", siguiente: 3 }
+    ]
+    },
+   17: {
+    titulo: "DRACULA",
+    texto: "ESTA BIEN, NO IMPORTA... SI QUIERES SALIR SOLO HABLA CON HERBERT, EL TE PODRÁ DECIR COMO VOLVER. PERO DEBES SER AMABLE.",
+    media: "IMG/DRACULA1.gif",
+    tipo: "imagen",
+      audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "BUSCAR A HERBERT", siguiente: 3 }
+    ]
+    },
+  18: {
+    titulo: "HERBERT",
+    texto: "QUIEN ERES?!.",
+    media: "IMG/HERBERTWEST1.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "ERES HERBERT?", siguiente: 19 }
+    ]
+     },
+  19: {
+    titulo: "HERBERT",
+    texto: "SI! DE DONDE VIENES TU Y QUE QUIERES? TE TRAJO DRACULA O EL DOCTOR FRANKENSTEIN?.",
+    media: "IMG/HERBERTWESTANGRY.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "VINE POR DRACULA, ME DIJO QUE PODIAS AYUDARME A REGRESAR A MI HOGAR DE CACA", siguiente: 20 }
+    ]
+    },
+  20: {
+    titulo: "HERBERT",
+    texto: "TU HOGAR? Y DONDE VIVES EXACTAMENTE?.",
+    media: "IMG/HERBERTWESTTALKING.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "VIVO EN LA CIUDAD DE CACA, PERO DESPERTE AQUI Y NO RECUERDO QUE ME PASÓ", siguiente: 21 }
+    ]
+    },
+  21: {
+    titulo: "HERBERT",
+    texto: "ERES HUMANO! NO SABES DONDE ESTAS? NO TODOS PUEDEN SALIR DE AQUI TAN FACIL...",
+    media: "IMG/HERBERTWESTSURPRISED.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "VUELVE A JUGAR NO TENGO NADA TERMINADO", siguiente: 1 }
     ]
   }
 };
