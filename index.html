@@ -68,21 +68,71 @@ setInterval(() => {
   <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
   <br>
    <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
-   <nav class="NAVINFO"><marquee behavior="" direction="right"><img class="MINIIMAGE" src="IMG/SPACESHIP.gif"> HOLA <img class="MINIIMAGE" src="IMG/SPACESHIP.gif"></marquee></nav>
+   <nav class="NAVINFO"><marquee behavior="" direction="right"><img class="MINIIMAGE" src="IMG/SPACESHIP.gif"> HOLA 
+    <img class="MINIIMAGE" src="IMG/SPACESHIP.gif"></marquee>
+  <br>
+ <video class="IMAGE" id="videoPlayer" controls autoplay>
+      <source src="Halloween parody.mp4" type="video/mp4">
+    </video></nav>
    <nav class="NAVINFO2"><marquee behavior="" direction="right"><img class="IMAGE" src="IMG/NEWBLOODSIGN.gif"></marquee>
   <br>
   <p>
+    <p><span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    <br>
     NUEVO: BARRA DE NOVEDADES.
     <BR>
       <BR>
+        <p><span style="color: rgb(255, 251, 0)">
+    106/34/1658
+    </span>
+    <br>
       NUEVAS CANCIONES.
       <BR>
         <BR>
+          <p><span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    <br>
         MI LIBERTAD DE EXPRESIÓN ARTISTICA SE A VUELTO LIMITADA DEBIDO A MULTIPLES CRITICAS POR PARTE DE MIS MALVADOS LOROS QUE SE CAGAN EN MI TECLADO POR MI NEGLIGENCIA.
         <br>
         <BR>
+          <p><span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    <br>
           NUEVOS VIDEOS "LITTLE SHOP OF HORRORS - DENTIST" "JIM E BROWN - IM QUITTING PROZAC TO CONTINUE DRINKING"
+          <BR>
+       <BR>
+        <p><span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    <br>
+NUEVA BARRA DE CONTENIDO (SIN CONTENIDO)
+<br>
+<br>
+<span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    <br>
+    NUEVA RUTA: HERBERT WEST Y VICTOR FRANKENSTEIN
+    <br>
+<span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+    SE ME OLVIDO QUE IBA A PONER 
   </p>
+</nav>
+<nav class="NAVINFO3"><marquee behavior="" direction="right"><img class="IMAGE3" src="IMG/BLOODYFOOTLEFT.gif">PROXIMAMENTE<img class="IMAGE3" src="IMG/BLOODYFOOTRIGHT.gif"></marquee>
+<br>
+<marquee behavior="" direction="up"><img class="IMAGE" src="IMG/ELVIRA.gif">
+<br>
+PROXIMAMENTE: ARTE (QUIZÁS). NUEVAS RUTAS, WINSLOW LEACH
+<br> Y BRIDE OF FRANKENSTEIN CON ELVIRA Y NOSFERATU
+<BR>
+MUSICA NUEVA, ERRORES EN LAS
+<br> RUTAS ARREGLADOS Y BOTONES INUTILES SEGUIRAN SIENDO INUTILES</marquee>
 </nav>
  </nav>
 </center>
@@ -248,7 +298,7 @@ const escenas = {
     texto: "ENCONTRASTE UN MISTERIOSO LABORATORIO Y VES A HERBERT.",
     media: "IMG/REANIMATORBACKGROUND.jpg",
     tipo: "imagen",
-    audio: "AUDIO/LAB.mp3",
+    audio: "AUDIO/lab.mp3",
     opciones: [
           { texto: "HABLAR CON EL", siguiente: 18 }, { texto: "SALIR", siguiente: 3 }
     ]
@@ -378,7 +428,7 @@ const escenas = {
     texto: "QUIEN ERES?!.",
     media: "IMG/HERBERTWEST1.gif",
     tipo: "imagen",
-    audio: "AUDIO/LAB.mp3",
+    audio: "AUDIO/lab.mp3",
     opciones: [
          { texto: "ERES HERBERT?", siguiente: 19 }
     ]
@@ -388,7 +438,7 @@ const escenas = {
     texto: "SI! DE DONDE VIENES TU Y QUE QUIERES? TE TRAJO DRACULA O EL DOCTOR FRANKENSTEIN?.",
     media: "IMG/HERBERTWESTANGRY.gif",
     tipo: "imagen",
-    audio: "AUDIO/lab.mp3",
+    audio: "",
     opciones: [
          { texto: "VINE POR DRACULA, ME DIJO QUE PODIAS AYUDARME A REGRESAR A MI HOGAR DE CACA", siguiente: 20 }
     ]
@@ -398,7 +448,7 @@ const escenas = {
     texto: "TU HOGAR? Y DONDE VIVES EXACTAMENTE?.",
     media: "IMG/HERBERTWESTTALKING.gif",
     tipo: "imagen",
-    audio: "AUDIO/lab.mp3",
+    audio: "",
     opciones: [
          { texto: "VIVO EN LA CIUDAD DE CACA, PERO DESPERTE AQUI Y NO RECUERDO QUE ME PASÓ", siguiente: 21 }
     ]
@@ -408,12 +458,156 @@ const escenas = {
     texto: "ERES HUMANO! NO SABES DONDE ESTAS? NO TODOS PUEDEN SALIR DE AQUI TAN FACIL...",
     media: "IMG/HERBERTWESTSURPRISED.gif",
     tipo: "imagen",
+    audio: "",
+    opciones: [
+         { texto: "QUE? SABES DONDE ESTOY?", siguiente: 22 }
+    ]
+     },
+  21: {
+    titulo: "HERBERT",
+    texto: "UHMM... MI DEDUCCIÓN ES QUE ESTAMOS EN UN UNA ESPECIE DE LIMBO DEBIDO A NUESTRAS MALAS ACCIONES EN LA TIERRA HUMANA DE CACA, O POR ALGUN TIPO DE ERROR, PERO HAY ALGUIEN QUE NOS PUEDE AYUDAR, DEBES ESCUCHARME...",
+    media: "IMG/HERBERTWESTTALKING.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "QUE RIDÍCULO", siguiente: 22 }
+    ]
+    },
+  21: {
+    titulo: "HERBERT",
+    texto: "UHMM... MI DEDUCCIÓN ES QUE ESTAMOS EN UN UNA ESPECIE DE LIMBO DEBIDO A NUESTRAS MALAS ACCIONES EN LA TIERRA HUMANA DE CACA, O POR ALGUN TIPO DE ERROR",
+    media: "IMG/HERBERTWESTPAPER.gif",
+    tipo: "imagen",
+    audio: "",
+    opciones: [
+         { texto: "QUE RIDÍCULO.", siguiente: 22 }
+    ]
+     },
+  22: {
+    titulo: "HERBERT",
+    texto: "INCREDULO.",
+    media: "IMG/HERBERTWEST2.gif",
+    tipo: "imagen",
+    audio: "AUDIO/HORRORSOUND.mp3",
+    opciones: [
+         { texto: "ESTÁS LOCO, Y TU JERINGA TIENE VOMITO RADIOACTIVO!", siguiente: 23 }, { texto: "DISCULPA HERBERT, TE ESCUCHO ENTONCES.", siguiente: 35 }
+    ]
+    },
+  23: {
+    titulo: "HERBERT",
+    texto: "HICISTE ENOJAR A HERBERT Y PUSO TU CEREBRO EN UNA JARRA DE PEPINILLOS.",
+    media: "IMG/BRAINJAR.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "VOLVER A JUGAR", siguiente: 1 }
+    ]
+     },
+  35: {
+    titulo: "HERBERT",
+    texto: "NO ES TAN CENCILLO COMO PARECE, NECESITAMOS LA AYUDA DE EL DOCTOR FRANKENSTEIN, LO ADMIRO MUCHO POR SU GRAN INTELIGENCIA, PROBABLEMENTE EL TAMBIEN HAYA DEDUCIDO ALGO.",
+    media: "IMG/HERBERTWESTSURPRISED.gif",
+    tipo: "imagen",
+    audio: "AUDIO/lab.mp3",
+    opciones: [
+         { texto: "ENTONCES VAMOS!", siguiente: 24 }
+    ]
+  },
+  24: {
+    titulo: "HERBERT",
+    texto: "BUENO... YA E VISITADO A EL DOCTOR FRANKENSTEIN... CREO QUE EL PREFIERE TRABAJAR SOLO, AUN QUE PENSÉ QUE PODRIAMOS TRABAJAR JUNTOS PERO SUPONGO QUE NO ES SU MODO...",
+    media: "IMG/HERBERTWESTSIDEEYE.webp",
+    tipo: "imagen",
+    audio: "AUDIO/Sonido de Grillo.mp3",
+    opciones: [
+         { texto: "EL ES MALO?", siguiente: 25 }, { texto: "QUE PASÓ ENTRE USTEDES?", siguiente: 26 }
+    ]
+    },
+  26: {
+    titulo: "HERBERT",
+    texto: "EMM... CREO QUE FUI UN POQUITO INSISTENTE... PERO TU PODRIAS CONVENCERLO Y PODRIAMOS AYUDARTE. ",
+    media: "IMG/HERBERTWESTSIDEEYE.webp",
+    tipo: "imagen",
+    audio: "AUDIO/Sonido de Grillo.mp3",
+    opciones: [
+         { texto: "Y DONDE PUEDO ENCONTRARLO?", siguiente: 27 }
+    ]
+    },
+  25: {
+    titulo: "HERBERT",
+    texto: "NO REALMENTE... CREO... PERO SEGURO TU SI PODRÍAS CONVENCERLO PARA QUE NOS AYUDE.",
+    media: "IMG/HERBERTWESTSIDEEYE.webp",
+    tipo: "imagen",
+    audio: "AUDIO/Sonido de Grillo.mp3",
+    opciones: [
+         { texto: "ESTÁ BIEN... DONDE LO ENCUENTRO ENTONCES?", siguiente: 27 }
+    ]
+  },
+  27: {
+    titulo: "HERBERT",
+    texto: "ÉL ES NUESTRO VECINO, A LA IZQUIERDA DE ESTE CASTILLO ENCONTRARAS SU CASA, POR CIERTO HUELES A TIERRA MOJADA.",
+    media: "IMG/HERBERTWESTSURPRISED.gif",
+    tipo: "imagen",
     audio: "AUDIO/LAB.mp3",
     opciones: [
-         { texto: "VUELVE A JUGAR NO TENGO NADA TERMINADO", siguiente: 1 }
+         { texto: "IR CON DOCTOR FRANKENSTEIN", siguiente: 28 }
+    ]
+    },
+
+
+  28: {
+    titulo: "DOCTOR FRANKENSTEIN",
+    texto: "ESTAS AFUERA DE EL CASTILLO",
+    media: "IMG/HAUNTEDCASTLE.gif",
+    tipo: "imagen",
+    audio: "AUDIO/THUNDER.mp3",
+    opciones: [
+      { texto: "IR A LA DERECHA", siguiente: 30 }, { texto: "IR A CASA DE DOCTOR FRANKENSTEIN", siguiente: 29 }
+    ]
+    },
+
+  29: {
+    titulo: "DOCTORFRANKENSTEIN",
+    texto: "ESTAS EN CASA DE DOCTOR FRANKENSTEIN",
+    media: "IMG/OPENDOOR.gif",
+    tipo: "imagen",
+    audio: "AUDIO/",
+    opciones: [
+      { texto: "TOCAR LA PUERTA", siguiente: 31 }
+    ]
+     },
+
+  30: {
+    titulo: "DOCTORFRANKENSTEIN",
+    texto: "PROXIMAMENTE...",
+    media: "IMG/OPENDOOR.gif",
+    tipo: "imagen",
+    audio: "AUDIO/",
+    opciones: [
+      { texto: "VOLVER", siguiente: 28 }
+    ]
+    },
+    31: {
+    titulo: "DOCTORFRANKENSTEIN",
+    texto: "HOLA... QUIEN ES?",
+    media: "IMG/VICTORFRANKENSTEINEYE.gif",
+    tipo: "imagen",
+    audio: "AUDIO/HALLOWEEN.mp3",
+    opciones: [
+      { texto: "HOLA SEÑOR FRANKENSTEIN, VENGO DE PARTE DE HERBERT...", siguiente: 32 }
+    ]
+    },
+    32: {
+    titulo: "DOCTORFRANKENSTEIN",
+    texto: "HERBERT!? ESE ACOSADOR MEDIOCRE!? LARGATE DE AQUÍ AHORA!!",
+    media: "IMG/VICTORFRANKENSTEINEYE.gif",
+    tipo: "imagen",
+    audio: "",
+    opciones: [
+      { texto: "NO TERMINADO Y SOPORTA", siguiente: 31 }
     ]
   }
-};
+}
 
 // 2. CONTROL
 let escenaActual = 1;
