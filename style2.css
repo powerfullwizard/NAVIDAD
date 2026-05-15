@@ -47,6 +47,28 @@ width: 30px;
   .MINIMINIIMAGE {
 width: 18px;
  }
+ .MARQUEEUP {
+width: 100px;
+ }
+
+ .marquee1up{
+  width: 100px;
+  height: 480px;
+  background-image: url(IMG/STARTS2BACKGROUND.gif);
+   background-repeat: repeat;
+        background-size: 120px;
+        position: absolute;
+  right: 0px;
+ }
+ .marquee2up{
+  width: 100px;
+  height: 480px;
+  background-image: url(IMG/STARTS2BACKGROUND.gif);
+   background-repeat: repeat;
+        background-size: 120px;
+        position: absolute;
+  left: 0px;
+ }
 
   .NAV3 {
     background-image: url(IMG/REDBACKGROUND.jpg);
@@ -174,8 +196,33 @@ background-image: url(IMG/BLUEBACKGROUND.gif);
 
   }
 
+  .IFRAME1 {
+     position: relative;
+    z-index: 9999;
+  }
 
+.NAV7 {
+background-image: url(IMG/REDBACKGROUND.jpg);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 600px;
+    height: 500px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+     position: relative;
+     overflow: auto;
 
+  }
+.textonav7{
+  position: relative;
+  z-index: 9999;
+  font-size: 12px;
+  color: #000;
+}
 .NAVYT {
     background-image: url(IMG/YTREPRODUCER.jpg);
         background-size: cover;
@@ -448,6 +495,10 @@ width: 200px;
 
     padding:10px;
     cursor:move;
+     position: sticky;
+     top: 0;
+     z-index: 9999;
+
 }
 
 #contenido{
@@ -505,6 +556,38 @@ width: 200px;
     0 0 8px rgba(0, 0, 0, 0.801);
 
     padding:10px;
+     position: sticky;
+  top: 0;
+  z-index: 10;
+
 
 }
+.barra4 {
+     font-size: 10px;
+  color: rgb(255, 221, 221);
+
+  background: linear-gradient(
+    to bottom,
+      #d80000 0%,
+    #240000 45%,
+    #b40000 100%
+  );
+
+  border-top: 1px solid #3f0000;
+  border-left: 1px solid  #360000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000;
+
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 0, 0, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
+    0 0 8px rgba(0, 0, 0, 0.801);
+
+    padding:10px;
+ 
+
+
+}
+
 
