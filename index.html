@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CACA</title>
     <link rel="icon" type="image/x-icon" href="IMG/BLOODYBRAIN.gif">
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fd4acd9d03124bc0b13e1b06f2080365"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 
@@ -143,6 +144,7 @@ NUEVA BARRA DE CONTENIDO (SIN CONTENIDO)
         <p><span style="color: rgb(255, 251, 0)">
     105/40/1655
     </span>
+    <br>
     NUEVOS VIDEOS: PAHANTOM OF THE PARADISE - NEVER THOUGHT ID GET TO MEET THE DEVIL,
     TWISTED SISTER - THE PRICE
     <BR>
@@ -150,6 +152,7 @@ NUEVA BARRA DE CONTENIDO (SIN CONTENIDO)
         <p><span style="color: rgb(255, 251, 0)">
     105/40/1655
     </span>
+    <br>
  NUEVO PANEL MISTERIOSO Y NAV PARA ARTE
   </p>
 </nav>
@@ -197,7 +200,7 @@ QUIERO SER LIIBRE QUIERO HACER LO QUE ME HACE FELIZ
 
 <div class="video-container">
     <video id="videoPlayer" controls autoplay>
-      <source src="IMG/Twisted Sister - I Wanna Rock.mp4" type="video/mp4">
+      <source src="" type="video/mp4">
     </video>
 
     <button class="button2" id="nextBtn">SIGUIENTE</button>
@@ -712,15 +715,25 @@ const escenas = {
     opciones: [
       { texto: "...", siguiente: 45 }
     ]
-    },
+     },
     45: {
     titulo: "DOCTORFRANKENSTEIN",
-    texto: "VICTOR FRANKENSTEIN: TOMA ESO MARICON!                          HERBERT: AAA MI ANO",
-    media: "IMG/HERBERTWESTFIGHT.gif",
+    texto: "POR MIENTRAS EN EL CASTILLO DE DRACULA:",
+    media: "IMG/CASTILLOERIKWINSLOW.png",
     tipo: "imagen",
-    audio: "",
+    audio: "AUDIO/Dramatic Organ Sound.mp3",
     opciones: [
-      { texto: "...", siguiente: 43 }
+      { texto: "CONTINUAR", siguiente: 46 }
+    ]
+     },
+    46: {
+    titulo: "DOCTORFRANKENSTEIN",
+    texto: "",
+    media: "IMG/DRACULA1.gif",
+    tipo: "imagen",
+    audio: "AUDIO/Dramatic Organ Sound.mp3",
+    opciones: [
+      { texto: "CONTINUAR", siguiente: 46 }
     ]
     
   }
@@ -1035,6 +1048,83 @@ document.addEventListener("mouseup", () => {
     moviendo = false;
 });
 </script>
+
+
+
+<center>
+<div class="miSistemaIframe">
+
+    <p>PROXIMAMENTE...</p>
+
+    <div class="miSistemaIframe-botones">
+
+        <button
+            class="miSistemaIframe-boton"
+            onclick="toggleIframe(this, 'https://example.com')">
+            PROXIMAMENTE...
+        </button>
+
+        <button
+            class="miSistemaIframe-boton" onclick="toggleIframe(this, 'https://www.wikipedia.org')">
+            PROXIMAMENTE...
+        </button>
+
+        <button
+            class="miSistemaIframe-boton"
+            onclick="toggleIframe(this, 'https://www.CACA.com')">
+            PROXIMAMENTE...
+        </button>
+
+    </div>
+
+    <div class="miSistemaIframe-contenedor">
+
+        <iframe
+            class="miSistemaIframe-frame"
+            src="">
+        </iframe>
+
+    </div>
+
+</div>
+</center>
+
+<script>
+
+function toggleIframe(boton, url){
+
+    // Encontrar el sistema actual
+    const sistema = boton.closest(".miSistemaIframe");
+
+    // Obtener elementos internos
+    const contenedor = sistema.querySelector(".miSistemaIframe-contenedor");
+    const iframe = sistema.querySelector(".miSistemaIframe-frame");
+
+    // Estado actual
+    const abierto = contenedor.style.display === "block";
+
+    // Si está abierto con la misma URL -> cerrar
+    if(abierto && iframe.src === url){
+
+        contenedor.style.display = "none";
+        iframe.src = "";
+
+    }else{
+
+        // Abrir/cambiar URL
+        iframe.src = url;
+        contenedor.style.display = "block";
+
+    }
+}
+
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
