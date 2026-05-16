@@ -53,7 +53,7 @@ width: 100px;
 
  .marquee1up{
   width: 100px;
-  height: 480px;
+  height: 1210px;
   background-image: url(IMG/STARTS2BACKGROUND.gif);
    background-repeat: repeat;
         background-size: 120px;
@@ -62,7 +62,7 @@ width: 100px;
  }
  .marquee2up{
   width: 100px;
-  height: 480px;
+  height: 1210px;
   background-image: url(IMG/STARTS2BACKGROUND.gif);
    background-repeat: repeat;
         background-size: 120px;
@@ -148,7 +148,26 @@ width: 100px;
     top: 245px; 
   }
 
-
+ .NAVINFO4 {
+    background-image: url(IMG/STARTS2BACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 200px;
+    height: 340px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    overflow: scroll;
+     transform: translateY(-170px);
+     scrollbar-color: black rgb(255, 0, 0);
+      margin-right:auto;
+       position: absolute;
+    left: 20px;
+    top: 295px; 
+  }
 
   .NAV4 {
     background-image: url(IMG/STARTS2BACKGROUND.gif);
@@ -678,9 +697,9 @@ width: 200px;
 .miSistemaIframe-frame{
     width:100%;
     height:500px;
-    border:2px solid #ccc;
-    border-radius:10px;
-    background:white;
+    border:2px solid #ff0000;
+    border-style: groove;
+    background:rgb(0, 0, 0);
 }
 
 
