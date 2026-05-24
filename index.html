@@ -43,10 +43,14 @@ setInterval(() => {
 
     <center>
  <nav class="NAV1">
+
 <marquee  direction="LEFT"><img src="IMG/SKELETONRIGHTHAND.gif">BIENVENIDO</marquee>
  </nav>
  </center>
+  
  
+
+
 
 <center>
 <nav class="NAV2">
@@ -1044,24 +1048,24 @@ document.addEventListener("mouseup", () => {
 
         <button
             class="miSistemaIframe-boton"
-            onclick="toggleIframe(this, 'https://98.js.org/')">
+            onclick="toggleIframe(this, 'https://98.js.org/')"><img src="IMG/REDBUTTON.gif">
             98.JS.ORG
         </button>
 
         <button
-            class="miSistemaIframe-boton" onclick="toggleIframe(this, 'https://jspaint.app/#local:bc749104c8aa6')">
+            class="miSistemaIframe-boton" onclick="toggleIframe(this, 'https://jspaint.app/#local:bc749104c8aa6')"><img src="IMG/REDBUTTON.gif">
           MS PAINT
         </button>
 
         <button
             class="miSistemaIframe-boton"
-            onclick="toggleIframe(this, 'https://theoldnet.com/')">
+            onclick="toggleIframe(this, 'https://theoldnet.com/')"><img src="IMG/REDBUTTON.gif">
             THE OLD NET
         </button>
 
          <button
             class="miSistemaIframe-boton"
-            onclick="toggleIframe(this, 'https://www.retrogames.cz/play_414-DOS.php#google_vignette')">
+            onclick="toggleIframe(this, 'https://www.retrogames.cz/play_414-DOS.php#google_vignette')"><img src="IMG/REDBUTTON.gif">
             DOOM
         </button>
 
@@ -1086,10 +1090,13 @@ document.addEventListener("mouseup", () => {
 <nav class="NAV8">
   <marquee  direction="LEFT"><img src="IMG/SKELETONRIGHTHAND.gif">CREDITOS:</marquee><hr style="border: none; height: 1px; background-color: #5600b8;">
   <BR>
-      <a href="https://98.js.org/" target="_blank">98.js.org</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
-      <a href="https://jspaint.app/#local:bc749104c8aa6" target="_blank">Ms Paint</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
-      <a href="https://theoldnet.com/" target="_blank">The Old Net</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
-      <a href="https://www.retrogames.cz/play_414-DOS.php#google_vignette" target="_blank">Doom Online</a>
+    <a href="https://98.js.org/" target="_blank" class="link" id="boton"><img src="IMG/REDBUTTON.gif">98.js.org</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
+      <a href="https://jspaint.app/#local:bc749104c8aa6" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Ms Paint</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
+      <a href="https://theoldnet.com/" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">The Old Net</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
+      <a href="https://www.retrogames.cz/play_414-DOS.php#google_vignette" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Doom Online</a>
+      <audio id="myaudio" preload="auto">
+  <source src="AUDIO/clicksound2.mp3" type="audio/mpeg">
+</audio>
  </nav>
 </center>
 <br>
@@ -1201,17 +1208,17 @@ document.addEventListener("mouseup", () => {
 <script>
 function toggleIframe(boton, url){
 
-
+    // Encontrar el sistema actual
     const sistema = boton.closest(".miSistemaIframe");
 
-
+    // Obtener elementos internos
     const contenedor = sistema.querySelector(".miSistemaIframe-contenedor");
     const iframe = sistema.querySelector(".miSistemaIframe-frame");
 
-
+    // Estado actual
     const abierto = contenedor.style.display === "block";
 
-
+    // Si está abierto con la misma URL -> cerrar
     if(abierto && iframe.src === url){
 
         contenedor.style.display = "none";
@@ -1219,7 +1226,7 @@ function toggleIframe(boton, url){
 
     }else{
 
-    
+        // Abrir/cambiar URL
         iframe.src = url;
         contenedor.style.display = "block";
 
@@ -1249,6 +1256,18 @@ botones.forEach(btn => {
 
 });
 
+</script>
+
+
+<script>
+const botonHover = document.getElementById("boton");
+const audio = document.getElementById("myaudio");
+
+botonHover.addEventListener("mouseenter", () => {
+  audio.pause();
+  audio.currentTime = 0;
+  audio.play();
+});
 </script>
 
 </body>
