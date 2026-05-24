@@ -842,7 +842,7 @@ background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
     inset -1px -1px #0a0a0a;
 }
 
-/* Botones */
+
 ::-webkit-scrollbar-button {
   width: 16px;
   height: 16px;
