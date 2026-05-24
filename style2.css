@@ -1,6 +1,5 @@
 body {
     background-color: black;
-          scrollbar-color: rgb(255, 0, 0) rgb(0, 0, 0);
    }
 body {
     color: rgb(255, 0, 0);
@@ -8,9 +7,10 @@ body {
     cursor:url("IMG/BLOODYBRAINCURSOR.gif"), auto;
   }
   .NAV1 {
-     background-image: url(IMG/WINSLOWLEACH.gif);
+     background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
     background-repeat: repeat;
         background-size: 120px;
+        color: #ffffff;
     width: 600px; 
     z-index: 11; 
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
@@ -103,7 +103,6 @@ width: 100px;
       position: absolute;
     left: 20px; 
     top: 165px;    
-     scrollbar-color: black blue;
   }
 
   .NAVINFO2 {
@@ -120,7 +119,6 @@ width: 100px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     overflow: scroll;
      transform: translateY(-170px);
-     scrollbar-color: black rgb(255, 0, 0);
       margin-right:auto;
        position: absolute;
     left: 20px;
@@ -141,7 +139,6 @@ width: 100px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     overflow: scroll;
      transform: translateY(-220px);
-     scrollbar-color: black blue;
       margin:auto;
       position: absolute;
     left: 360px;
@@ -162,7 +159,6 @@ width: 100px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     overflow: scroll;
      transform: translateY(-170px);
-     scrollbar-color: black rgb(255, 0, 0);
       margin-right:auto;
        position: absolute;
     left: 20px;
@@ -261,14 +257,12 @@ background-color: #000;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
      position: relative;
      overflow: auto;
-     scrollbar-color: black black;
-
   }
 
    .FRANCINE {
 background-color: #000;
     width: 600px;
-    height: 500px; 
+    height: 700px; 
     z-index: 11; 
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -301,11 +295,27 @@ background-color: #000;
      padding: 10px;
      text-align: left;
   }
+  .TEXTONAV922{
+       background-image: url(IMG/1-k.jpg);
+    background-repeat: repeat;
+        background-size: 50px;
+         width: 100px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+     top: 50px;
+     left: 33%;
+     padding: 10px;
+     text-align: left;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+     top: 425px;
+     left: 6%;
+     z-index: 9999;
+  }
 
   .JANE {
 background-color: #000;
     width: 600px;
-    height: 500px; 
+    height: 700px; 
     z-index: 11; 
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -315,7 +325,7 @@ background-color: #000;
   align-items: flex-start;
   }
   .TEXTONAV93{
-    background-image: url(IMG/REDHEARTBACKGROUND.gif);
+    background-image: url(IMG/YELLOWDOTSBACKGROUND.gif);
     background-repeat: repeat;
         background-size: 50px;
         width: 400px;
@@ -327,7 +337,7 @@ background-color: #000;
   transform: translateX(-50%);
   }
     .TEXTONAV94{
-       background-image: url(IMG/REDHEARTBACKGROUND.gif);
+       background-image: url(IMG/YELLOWDOTSBACKGROUND.gif);
     background-repeat: repeat;
         background-size: 50px;
          width: 386px;
@@ -337,6 +347,19 @@ background-color: #000;
      left: 33%;
      padding: 10px;
      text-align: left;
+  }
+   .TEXTONAV944{
+       background-image: url(IMG/REDHEARTBACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 50px;
+         width: 100px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+     top: 425px;
+     left: 6%;
+     padding: 10px;
+     text-align: left;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
 .textonav7{
   position: relative;
@@ -580,7 +603,6 @@ button:hover {
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     overflow: scroll;
      transform: translateY(-220px);
-     scrollbar-color: black blue;
       margin:auto;
       position: absolute;
     left: 260px;
@@ -628,31 +650,6 @@ width: 200px;
     padding:15px;
 }
 
-.barra2 {
-     font-size: 10px;
-  color: rgb(255, 221, 221);
-  
-
-  background: linear-gradient(
-    to bottom,
-      #82bcff 0%,
-    #000f94 45%,
-    #2b5dff 100%
-  );
-
-  border-top: 1px solid #002fff;
-  border-left: 1px solid  #000874;
-  border-right: 1px solid #ffffff;
-  border-bottom: 1px solid #000;
-
-
-  box-shadow:
-    inset 0 1px 0 rgba(0, 10, 150, 0.25),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
-    0 0 8px rgba(0, 0, 0, 0.801);
-
-    padding:10px;
-}
 
 .barra3 {
      font-size: 10px;
@@ -722,7 +719,6 @@ background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
 
 /* CONTENEDOR PRINCIPAL */
 .miSistemaIframe{
-    font-family: Arial, sans-serif;
     width: 600px;
     height: 500px;
     padding:20px;
@@ -735,7 +731,6 @@ background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
 }
 
 .miSistemaIframe-boton{
-  font-family: 'Times New Roman', serif;
   width: 101px;
   height: 21px;
 
@@ -815,3 +810,105 @@ background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
 
 
 
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: #ff0000;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4e0000;
+
+  background-image:
+    linear-gradient(45deg, #ff0000 25%, transparent 25%),
+    linear-gradient(-45deg, #b80000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000000 75%),
+    linear-gradient(-45deg, transparent 75%, #000000 75%);
+
+  background-size: 4px 4px;
+}
+
+/* Barra draggable */
+::-webkit-scrollbar-thumb {
+  background-color: #d80000;
+background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+  border-top: 2px solid #e2e2e2;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+
+  box-shadow:
+    inset 1px 1px #ff0000,
+    inset -1px -1px #0a0a0a;
+}
+
+/* Botones */
+::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+
+  background-color: #8b0000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 8px;
+
+  border-top: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+/* Flecha arriba */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("IMG/HEARTDOT.gif");
+}
+
+/* Flecha abajo */
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("IMG/HEARTDOT.gif");
+}
+
+
+    .audioBtn{
+    border:none;
+    cursor:pointer;
+}
+
+/* BOTÓN 1 */
+#btn1{
+   padding:10px;
+        font-size:15px;
+        border:none;
+        cursor:pointer;
+        box-shadow:0 0 15px rgba(0, 0, 0, 0.5);
+         background-image: url(IMG/1-k.jpg);
+    background-repeat: repeat;
+        background-size: 50px;
+         width: 100px;
+    color: rgb(255, 255, 255);
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    position: absolute;
+     top: 425px;
+     left: 78%;
+}
+
+/* BOTÓN 2 */
+#btn2{
+        font-size:15px;
+        border:none;
+        cursor:pointer;
+        box-shadow:0 0 15px rgba(0, 0, 0, 0.5);
+         background-image: url(IMG/REDHEARTBACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 50px;
+         width: 100px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+     top: 450px;
+     left: 78%;
+     z-index: 9999;  
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+         width: 100px;
+    position: absolute;
+     padding: 10px;
+}
