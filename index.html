@@ -43,7 +43,7 @@ setInterval(() => {
 
     <center>
  <nav class="NAV1">
-
+  
 <marquee  direction="LEFT"><img src="IMG/SKELETONRIGHTHAND.gif">BIENVENIDO</marquee>
  </nav>
  </center>
@@ -94,7 +94,7 @@ setInterval(() => {
           IFRAMES
           <BR>
             <BR>
-         SECRETOS...
+         CODIGOS
   <br>
  <video class="IMAGE" controls autoplay>
       <source src="Halloween parody.mp4" type="video/mp4">
@@ -274,18 +274,15 @@ QUIERO SER LIIBRE QUIERO HACER LO QUE ME HACE FELIZ
 
     nextBtn.addEventListener("click", () => {
 
-      // Avanza al siguiente video
       currentVideo++;
 
-      // Si llega al final vuelve al primero
+
       if (currentVideo >= videos.length) {
         currentVideo = 0;
       }
 
-      // Cambia el video
       player.src = videos[currentVideo];
 
-      // Reproduce automáticamente
       player.play();
     });
   </script>
@@ -309,17 +306,17 @@ QUIERO SER LIIBRE QUIERO HACER LO QUE ME HACE FELIZ
 <script>
 function reproducir(id){
 
-    // detener todos
     document.querySelectorAll("audio").forEach(audio=>{
         audio.pause();
         audio.currentTime = 0;
     });
 
-    // reproducir el elegido
     let audio = document.getElementById(id);
     audio.play();
 }
 </script>
+
+
 
 <br>
 
@@ -341,8 +338,8 @@ function reproducir(id){
 <nav>
 
 <script>
+ 
 
-// 1. ESCENAS (FUERA, GLOBAL)
 const escenas = {
   1: {
     titulo: "Inicio",
@@ -773,10 +770,8 @@ const escenas = {
   }
 }
 
-// 2. CONTROL
 let escenaActual = 1;
 
-// 3. MOTOR
 function cargarEscena(num) {
   const p = escenas[num];
 
@@ -787,10 +782,9 @@ function cargarEscena(num) {
 
   escenaActual = num;
 
-  // TEXTO
   document.getElementById("texto").innerText = p.texto;
 
-  // MEDIA
+
   const mediaDiv = document.getElementById("media");
   mediaDiv.innerHTML = "";
 
@@ -806,7 +800,6 @@ function cargarEscena(num) {
     `;
   }
 
-  // AUDIO
   if (p.audio) {
     let audio = document.getElementById("audio");
 
@@ -820,7 +813,6 @@ function cargarEscena(num) {
     audio.play();
   }
 
-  // BOTONES
   const opcionesDiv = document.getElementById("opciones");
   opcionesDiv.innerHTML = "";
 
@@ -832,7 +824,6 @@ function cargarEscena(num) {
   });
 }
 
-// 4. INICIAR
 cargarEscena(1);
 
 </script>
@@ -949,14 +940,30 @@ MENTIRA SOLO HACIA DIBUJOS FEOS, PERO SOLO LOS HACIA EN CLASES POR ABURRIMIENTO
   <marquee behavior="" scrollamount="15" direction="up" class="marquee1up"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"></marquee>
    <marquee behavior="" scrollamount="15" direction="up" class="marquee2up"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"><img class="MARQUEEUP" src="IMG/HERESJOHNNY.gif"></marquee>
  <p class="textonav7">
-VACÍO POR AHORA...
+
  </p>
+ <div class="SWITCH">
+   <img src="IMG/THEMETALWIZARD.png" class="img1">
+   <img src="IMG/METALWIZARD.png" class="img2">
+</div>
+
+<nav class="CONTADOR2">
+<div class="barra5"> CLICKEA AL QUIET RIOT...</div>
+<img class="img3" id="imagen" src="IMG/QUIET RIOT.jpg">
+
+<div id="contador">0</div>
+
+<audio id="sonido" src="AUDIO/clicksound1.mp3"></audio>
+</nav>
+
+<nav>HOLA WEI</nav>
+
 </nav>
 </center>
 <script>
 function detenerTodo(actual = null){
 
-    // Pausar audios
+
     document.querySelectorAll("audio").forEach(audio => {
 
         if(audio !== actual){
@@ -966,7 +973,7 @@ function detenerTodo(actual = null){
 
     });
 
-    // Pausar videos
+
     document.querySelectorAll("video").forEach(video => {
 
         if(video !== actual){
@@ -976,9 +983,7 @@ function detenerTodo(actual = null){
     });
 }
 
-// =========================
-// ACTIVAR CONTROL AUTOMATICO
-// =========================
+
 document.addEventListener("play", function(e){
 
     detenerTodo(e.target);
@@ -1006,7 +1011,6 @@ const barra = document.getElementById("barra");
 let moviendo = false;
 let offsetX, offsetY;
 
-/* MOSTRAR Y OCULTAR */
 boton.addEventListener("click", () => {
     if(panel.style.display === "none"){
         panel.style.display = "block";
@@ -1015,7 +1019,6 @@ boton.addEventListener("click", () => {
     }
 });
 
-/* INICIAR MOViMIENTO */
 barra.addEventListener("mousedown", (e) => {
     moviendo = true;
 
@@ -1031,7 +1034,6 @@ document.addEventListener("mousemove", (e) => {
     }
 });
 
-/* SOLTAR */
 document.addEventListener("mouseup", () => {
     moviendo = false;
 });
@@ -1069,6 +1071,20 @@ document.addEventListener("mouseup", () => {
             DOOM
         </button>
 
+        <button
+            class="miSistemaIframe-boton"
+            onclick="toggleIframe(this, 'https://archive.org/search?query=creator%3A%22Noodle+Soup+Productions%22')"><img src="IMG/REDBUTTON.gif">
+            GOTHAM GIRLS
+        </button>
+
+         <button
+            class="miSistemaIframe-boton"
+            onclick="toggleIframe(this, 'https://www.wco.tv/anime/the-ren-stimpy-show-2/?season=all')"><img src="IMG/REDBUTTON.gif">
+            REN AND STIMPY SHOW
+        </button>
+
+
+
     </div>
 
     <div class="miSistemaIframe-contenedor">
@@ -1093,7 +1109,9 @@ document.addEventListener("mouseup", () => {
     <a href="https://98.js.org/" target="_blank" class="link" id="boton"><img src="IMG/REDBUTTON.gif">98.js.org</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
       <a href="https://jspaint.app/#local:bc749104c8aa6" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Ms Paint</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
       <a href="https://theoldnet.com/" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">The Old Net</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
-      <a href="https://www.retrogames.cz/play_414-DOS.php#google_vignette" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Doom Online</a>
+      <a href="https://www.retrogames.cz/play_414-DOS.php#google_vignette" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Doom Online</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
+      <a href="https://archive.org/search?query=creator%3A%22Noodle+Soup+Productions%22" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Gotham Girls</a><hr  style="border: none; height: 1px; background-color: #5600b8;">
+      <a href="https://www.wco.tv/anime/the-ren-stimpy-show-2/?season=all" target="_blank"class="link" id="boton"><img src="IMG/REDBUTTON.gif">Ren And Stimpy Show</a>
       <audio id="myaudio" preload="auto">
   <source src="AUDIO/clicksound2.mp3" type="audio/mpeg">
 </audio>
@@ -1208,17 +1226,14 @@ document.addEventListener("mouseup", () => {
 <script>
 function toggleIframe(boton, url){
 
-    // Encontrar el sistema actual
     const sistema = boton.closest(".miSistemaIframe");
 
-    // Obtener elementos internos
     const contenedor = sistema.querySelector(".miSistemaIframe-contenedor");
     const iframe = sistema.querySelector(".miSistemaIframe-frame");
 
-    // Estado actual
     const abierto = contenedor.style.display === "block";
 
-    // Si está abierto con la misma URL -> cerrar
+
     if(abierto && iframe.src === url){
 
         contenedor.style.display = "none";
@@ -1226,7 +1241,6 @@ function toggleIframe(boton, url){
 
     }else{
 
-        // Abrir/cambiar URL
         iframe.src = url;
         contenedor.style.display = "block";
 
@@ -1269,6 +1283,33 @@ botonHover.addEventListener("mouseenter", () => {
   audio.play();
 });
 </script>
+
+
+
+<!-- SCRIPT PARA CLICKS -->
+<script>
+    let clicks = 0;
+
+    const imagen = document.getElementById("imagen");
+    const contador = document.getElementById("contador");
+    const sonido = document.getElementById("sonido");
+
+    imagen.addEventListener("click", () => {
+
+        // sumar clicks
+        clicks++;
+
+        // mostrar contador
+        contador.textContent = clicks;
+
+        // reproducir sonido
+        sonido.currentTime = 0;
+        sonido.play();
+
+    });
+</script>
+
+
 
 </body>
 </html>
