@@ -1,4 +1,9 @@
+html {
+    image-rendering: pixelated;
+}
+
 body {
+   filter: saturate(80%) brightness(110%) contrast(110%);
     background-color: black;
    }
 body {
@@ -6,6 +11,7 @@ body {
     Font-family: 'Times New Roman', serif;
     cursor:url("IMG/BLOODYBRAINCURSOR.gif"), auto;
   }
+
   .NAV1 {
      background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
     background-repeat: repeat;
