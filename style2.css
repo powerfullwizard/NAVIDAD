@@ -12,6 +12,7 @@ body {
     cursor:url("IMG/BLOODYBRAINCURSOR.gif"), auto;
   }
 
+
   .NAV1 {
      background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
     background-repeat: repeat;
@@ -178,7 +179,37 @@ width: 100px;
     height: auto;
 }
 
-
+.FILTROS{
+  width: 40px;
+}
+.BOTON1{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+  filter: saturate(80%) brightness(110%) contrast(110%);
+}
+.BOTON1:hover{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+}
+.BOTON2{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+  filter: hue-rotate(200deg) saturate(80%) brightness(110%) contrast(110%);
+}
+.BOTON2:hover{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+}
+.BOTON3{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+  filter: hue-rotate(30deg) saturate(80%) brightness(110%) contrast(110%);
+}
+.BOTON3:hover{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+}
+.BOTON4{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+  filter: saturate(110%) brightness(130%) contrast(130%);
+}
+.BOTON4:hover{
+  background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
+}
 
 
   .NAV4 {
@@ -1153,3 +1184,9 @@ background-image: url(IMG/LIGHTBLUEBACKGROUND.jpg);
         left: 30%;
     }
 
+    .NOHAYVISITANTES{
+      position: absolute;
+      height: 50px;
+      top: 900px;
+      left: 100px;
+    }
