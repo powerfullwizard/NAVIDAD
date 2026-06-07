@@ -23,16 +23,30 @@ setInterval(() => {
 
 
 
-
-
-
-
+<!--SI QUIERES COPIAR ALGO DE MI CODIGO REVISA TODA LA LINEA Y EL CSS.
+ HAY CSS EN EL HTML Y JS ASÍ QUE TENDRAS QUE BUSCAR POR CLASS Y ID, ESTARÉ CATALOGANDO TODO,
+ PERO A MI TAMBIEN SE ME OLVIDA PARA QUE SIRVE CADA CODIGO Y DEBO DE TENER ALGUNOS SIN FUNCIÓN-->
 
 
 
 <!--REPRODUCTOR DE MUSICA-->
 
 <div class="music-player">
+  <div class="sprite"></div>
+
+<style>
+.sprite {
+    width: 64px;
+    height: 64px;
+    background: url(IMG/CACA.png);
+    animation: caminar 0.5s steps(4) infinite;
+}
+
+@keyframes caminar {
+    from { background-position: 0 0; }
+    to { background-position: -256px 0; }
+}
+</style>
 
 <div class="controls">
         <button onclick="prevSong()">⏮</button>
@@ -69,9 +83,6 @@ setInterval(() => {
             value="100"
         >
     </div>
-
-
-
 </div>
 
 <audio id="audio"></audio>
@@ -110,61 +121,56 @@ background-repeat: repeat;
 }
 
 .controls{
-    margin-bottom:8px;
+
+    display:flex;
+    justify-content:center;
+    gap:12px;
+
+    margin-bottom:20px;
 }
 
 .controls button{
-    width:40px;
-    height:25px;
-  font-size: 10px;
-  color: rgb(255, 221, 221);
 
-  background: linear-gradient(
-    to bottom,
-      #d80000 0%,
-    #240000 45%,
-    #b40000 100%
-  );
+    width:60px;
+    height:60px;
 
-  border-top: 1px solid #3f0000;
-  border-left: 1px solid  #360000;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000;
+    border:none;
 
-  border-radius: 8px;
+    border-radius:50%;
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 0, 0, 0.25),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
-    0 0 8px rgba(0, 0, 0, 0.801);
+    color:#dfffff;
+    font-size:22px;
 
-  cursor: pointer;
-    }
+    cursor:pointer;
 
-    .controls:hover {
-  color: rgb(255, 0, 0);
+    background:
+    radial-gradient(
+        circle at 30% 25%,
+        rgba(255,255,255,.9),
+        rgba(255, 0, 0, 0.562) 10%,
+        #3b0000 35%,
+        #ff0000d3 70%,
+        #000000
+    );
 
-  background: linear-gradient(
-    to bottom,
-      #2e0000 0%,
-    #240000 45%,
-    #200000 100%
-  );
+    border:2px solid #000000;
 
-  border-top: 1px solid #3f0000;
-  border-left: 1px solid  #360000;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000;
+    box-shadow:
+        0 0 10px #000000,
+        0 0 25px rgba(0, 0, 0, 0.4),
 
-  border-radius: 8px;
+        inset 0 4px 8px rgba(255,255,255,.5),
+        inset 0 -8px 12px rgba(0,0,0,.8);
+}
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 0, 0, 0.25),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
-    0 0 8px rgba(0, 0, 0, 0.801);
+ .controls button:hover{
 
-  cursor: pointer;
-    }
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 20px #ffffff,
+        0 0 40px #ff0000;
+}
 
 .timeline{
     display:flex;
@@ -473,6 +479,7 @@ loadSong(0);
  <nav class="NAV1">
   
 <marquee  direction="LEFT"><img src="IMG/SKELETONRIGHTHAND.gif">BIENVENIDO</marquee>
+<p class="rainbow">FELIZ MES DEL ORGULLO</p>
  </nav>
  </center>
   
@@ -505,8 +512,8 @@ loadSong(0);
         <button class="tab" onclick="opentab(event, 'CACA1')" id="defaultOpen">NUEVO</button>
         <button class="tab" onclick="opentab(event, 'CACA2')">PREGUNTAS</button>
         <button class="tab" onclick="opentab(event, 'CACA3')">PROXIMO</button>
-        <button class="tab" onclick="opentab(event, 'CACA4')">NADA</button>
-        <button class="tab" onclick="opentab(event, 'CACA5')">NADA TAMPOCO</button>
+        <button class="tab" onclick="opentab(event, 'CACA4')">FILTROS</button>
+        <button class="tab" onclick="opentab(event, 'CACA5')">NADA</button>
     </div>
 
     <div class="VENTANA">
@@ -668,7 +675,24 @@ QUIERO SER LIIBRE QUIERO HACER LO QUE ME HACE FELIZ
 
 
         <div id="CACA4" class="CONTENIDO">
-           VACÍO
+           <div class="FILTROS">
+     <button class="BOTON1" onclick="document.body.style.filter='saturate(80%) brightness(110%) contrast(110%)'">
+PAGINA NORMAL
+</button>
+    <button class="BOTON2" onclick="document.body.style.filter=' hue-rotate(200deg) saturate(80%) brightness(110%) contrast(110%)'">
+PAGINA VERDE
+</button>
+
+<button class="BOTON3" onclick="document.body.style.filter=' hue-rotate(30deg) saturate(80%) brightness(110%) contrast(110%)'">
+PAGINA ROSA
+</button>
+
+<button class="BOTON4" onclick="document.body.style.filter='saturate(110%) brightness(130%) contrast(130%)'">
+SATURADA
+</button>
+    </div>
+    <P>HOLA WEI TENGO DIARREA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</P>
+
         </div>
 
          <div id="CACA5" class="CONTENIDO">
@@ -714,14 +738,15 @@ window.onload = function () {
     font-size: 1rem;
     background-image: linear-gradient(
         to bottom,
-        rgb(0, 0, 0) 0%,
-        #7a0000 100%
+        rgba(51, 0, 0, 0.596) 0%,
+        #a50000 100%
     );
+     box-shadow:
+        inset 0 4px 8px rgba(255, 255, 255, 0.400);
     border: 0.5px solid #000000;
     border-left: none;
     outline: none;
     cursor: pointer;
-    box-shadow: 0px 1px 2px rgb(53, 53, 53) inset;
     overflow-x: hidden;
 }
 
@@ -729,8 +754,8 @@ window.onload = function () {
     border-bottom: none;
     background-image: linear-gradient(
         to bottom,
-        #ff0000 0%,
-        rgb(58, 0, 0) 100%
+        rgba(0, 183, 255, 0.596) 0%,
+        #0011ff 100%
     );
 }
 </style>
@@ -1444,8 +1469,10 @@ MENTIRA SOLO HACIA DIBUJOS FEOS, PERO SOLO LOS HACIA EN CLASES POR ABURRIMIENTO
 
 <audio id="sonido" src="AUDIO/clicksound1.mp3"></audio>
 </nav>
-
-<nav>HOLA WEI</nav>
+<nav class="NOHAYVISITANTES"> 
+  <p style="color: white;"><img src="IMG/CACA.png">NO HAY VISITANTES<img src="IMG/EMOJITRISTE.gif"></p>
+<a target="_blank" href="https://info.flagcounter.com/wJYk"><img src="https://s01.flagcounter.com/count2/wJYk/bg_000000/txt_FF0303/border_FF0000/columns_5/maxflags_20/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</nav>
 
 </nav>
 </center>
@@ -1800,6 +1827,7 @@ LE GUSTA COMER TIERRA MOJADA.
   <br>
   <nav class="NAV1">
     <img style="width: 150px; height: 70px;" src="IMG/WIZARDBLINKIE.png">
+     <textarea style="background-color: #000; color: rgb(0, 26, 255);"><a href="https://powerfullwizard.github.io/NAVIDAD/"><img style="width: 150px; height: 70px;" src="https://powerfullwizard.github.io/NAVIDAD/IMG/WIZARDBLINKIE.png"></a></textarea>
   <p><IMG style=" width: 50px;" src="IMG/WIZARD.gif"><IMG style=" width: 50px;" src="IMG/BLOODYHEART.gif">TE KIERO RORO GRASIAS PORSER MI AMIGO<IMG style=" width: 50px;" src="IMG/BLOODYHEART.gif"><IMG style=" width: 50px;" src="IMG/WIZARD.gif"></p>
     <p>LOVELYPLUMs TE EXTRAÑO</p> 
    <p>HOLA CHISITO HOLA PIPATUTO HOLA ERMANA HOLA MUNDO</p> 
@@ -1884,6 +1912,42 @@ botones.forEach(btn => {
     });
 </script>
 
+
+<!--TEXTOARCOIRIS-->
+<style>
+  .rainbow{
+    font-weight:bold;
+
+    background: linear-gradient(
+        90deg,
+        red,
+        rgb(255, 166, 0),
+        yellow,
+        rgb(21, 255, 0),
+        cyan,
+        rgb(25, 0, 255),
+        rgb(255, 0, 170),
+        red
+    );
+
+    background-size: 300% 100%;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+
+    animation: moverArcoiris 2s linear infinite;
+}
+
+@keyframes moverArcoiris{
+    from{
+        background-position: 0% 0%;
+    }
+    to{
+        background-position: -300% 0%;
+    }
+}
+</style>
 
 
 </body>
